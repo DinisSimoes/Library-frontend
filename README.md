@@ -1,27 +1,43 @@
-# Library
+# Sistema de Gerenciamento de Biblioteca 📚
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
+Este é um sistema de gerenciamento de livros e gêneros desenvolvido com Angular. A aplicação permite criar, listar, atualizar e deletar livros e gêneros, consumindo uma API RESTful.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## ✅ Tecnologias Utilizadas
+- **Angular**: versão 20+
+- **PrimeNG**: para componentes UI
+- **Lucide**: para icons
+- **Jasmine / Karma**: para testes unitários
 
-## Code scaffolding
+---
+## 🚀 Como Executar o Projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Pré-requisitos
 
-## Build
+- [Node.js](https://nodejs.org/) (recomendado: versão 18+)
+- [Angular CLI](https://angular.io/cli) (`npm install -g @angular/cli`)
+- [Yarn](https://yarnpkg.com/) (opcional, pode usar `npm`)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Passo a passo:
 
-## Running unit tests
+1. **Clone o repositório**
+2. **Instale as dependências**
+   ```bash
+   npm install
+   ```
+4. **Configure o arquivo environment.ts**: Atualize a URL da API em src/environments/environment.ts que está sendo usada para rodar o backend
+5. **Execute a aplicação**
+   ```bash
+   ng serve
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🧪 Rodando os Testes
+Para executar os testes unitários com Karma + Jasmine:
 
-## Running end-to-end tests
+ ```bash
+ng test
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🧑‍💻 Autor
+Desenvolvido com ❤️ por [Dinis Simoes](https://www.linkedin.com/in/dinis-f-simoes/)
