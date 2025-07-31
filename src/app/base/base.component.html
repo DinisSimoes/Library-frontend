@@ -1,0 +1,17 @@
+<nav class="navbar">
+  <div class="nav-content">
+    <a class="logo" routerLink="/">📚 Biblioteca</a>
+
+    <div class="nav-items">
+      <a
+        *ngFor="let item of navItems"
+        [routerLink]="item.href"
+        routerLinkActive="active"
+        class="nav-link"
+      >
+        <lucide-icon [name]="item.icon"></lucide-icon>
+        <span>{{ item.label }}</span>
+      </a>
+    </div>
+  </div>
+</nav>

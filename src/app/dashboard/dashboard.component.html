@@ -1,0 +1,69 @@
+<div class="dashboard">
+  <div class="header">
+    <div>
+      <h1 class="title">Dashboard</h1>
+      <p class="subtitle">Visão geral do sistema de biblioteca</p>
+    </div>
+  </div>
+
+  <div class="stats-grid">
+    <div *ngFor="let stat of stats" class="stat-card">
+      <p-card (click)="navigateTo(stat.href)" class="card">
+        <ng-template pTemplate="header">
+          <div class="card-header">
+            <span class="stat-title card-header-title">{{ stat.title }}</span>
+            <lucide-icon
+              [name]="stat.icon"
+              class="stat-icon"
+              [ngStyle]="{
+                backgroundColor: stat.color,
+                color: 'white',
+                fontSize: '1.2rem',
+                padding: '4px',
+                borderRadius: '4px'
+              }"
+            ></lucide-icon>
+          </div>
+        </ng-template>
+
+        <div class="card-body">
+          <div class="stat-value">{{ stat.value }}</div>
+          <small class="stat-description">{{ stat.description }}</small>
+          <button
+            pButton
+            type="button"
+            label="Ver todos"
+            class="view-button"
+            (click)="navigateTo(stat.href); $event.stopPropagation()"
+          ></button>
+        </div>
+      </p-card>
+    </div>
+  </div>
+
+  <div class="bottom-section">
+    <div class="panel">
+      <p-card>
+        <ng-template pTemplate="header">
+          <div class="card-header-bottom">
+            <h2>Ações Rápidas</h2>
+            <p>Adicione novos itens ao sistema</p>
+          </div>
+        </ng-template>
+
+        <div class="actions">
+          <button
+            *ngFor="let action of quickActions"
+            pButton
+            type="button"
+            class="action-button"
+            (click)="openDialog(action)"
+          >
+            <lucide-icon name="plus"></lucide-icon>
+            {{ action.label }}
+          </button>
+        </div>
+      </p-card>
+    </div>
+  </div>
+</div>

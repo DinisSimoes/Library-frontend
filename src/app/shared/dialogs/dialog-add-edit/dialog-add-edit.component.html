@@ -1,0 +1,43 @@
+<div class="form-container">
+  <div class="form-group">
+    <label for="name">Nome</label>
+    <input
+      pInputText
+      id="name"
+      class="form-input"
+      autocomplete="off"
+      [(ngModel)]="name"
+    />
+  </div>
+
+  <div *ngIf="type === 'books'">
+    <div class="form-group">
+      <label>Autor</label>
+      <p-select
+        appendTo="body"
+        [options]="authors"
+        [(ngModel)]="selectedAuthor"
+        optionLabel="name"
+        placeholder="Selecione um Autor"
+        class="form-input"
+      />
+    </div>
+
+    <div class="form-group genero-group">
+      <label>Gênero</label>
+      <p-select
+        appendTo="body"
+        [options]="genres"
+        [(ngModel)]="selectedGenre"
+        optionLabel="name"
+        placeholder="Selecione um Gênero"
+        class="form-input"
+      />
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <p-button label="Cancelar" severity="secondary" (click)="close()" />
+    <p-button label="Salvar" (click)="save()" />
+  </div>
+</div>
