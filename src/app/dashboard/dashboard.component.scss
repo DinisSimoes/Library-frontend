@@ -1,0 +1,128 @@
+.dashboard {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.title {
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: #6c757d; // text-secondary
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  padding-top: 2rem;
+}
+
+.card-header-bottom {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  padding-top: 2rem;
+}
+
+.stat-icon {
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.card-body {
+  margin: 1rem;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.stat-description {
+  color: #6c757d;
+}
+
+.view-button {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.bottom-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.panel {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 992px) {
+  .left-panel,
+  .right-panel {
+    flex: 1 1 48%;
+  }
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.activity {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.activity-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.activity-text {
+  font-size: 0.875rem;
+}
