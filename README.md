@@ -23,19 +23,19 @@ Este é um sistema de gerenciamento de livros e gêneros desenvolvido com Angula
 
 1. **Clone o repositório**
 2. **Instale as dependências**
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 4. **Configure o arquivo environment.ts**: Atualize a URL da API em src/environments/environment.ts que está sendo usada para rodar o backend
 5. **Execute a aplicação**
-   ```bash
-   ng serve
-   ```
+```bash
+ng serve
+```
 
 ## 🧪 Rodando os Testes
 Para executar os testes unitários com Karma + Jasmine:
 
- ```bash
+```bash
 ng test
 ```
 
