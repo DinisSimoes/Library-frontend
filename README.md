@@ -2,21 +2,19 @@
 
 Este é um sistema de gerenciamento de livros e gêneros desenvolvido com Angular. A aplicação permite criar, listar, atualizar e deletar livros e gêneros, consumindo uma API RESTful.
 
-## ✅ Tecnologias Utilizadas
+## 🧰 Tecnologias Utilizadas
 - **Angular**: versão 20
 - **PrimeNG**: para componentes UI
 - **Lucide**: para icons
 - **Jasmine / Karma**: para testes unitários
 
-## 🚀 Como Executar o Projeto
-
-### Pré-requisitos
+## ⚙️ Requisitos
 
 - [Node.js](https://nodejs.org/) (obrigatório: versão 22 ou superior)
 - [Angular CLI](https://angular.io/cli) (`npm install -g @angular/cli`)
 - [Yarn](https://yarnpkg.com/) (opcional, pode usar `npm`)
 
-### Passo a passo:
+## 🚀 Como rodar o projeto localmente
 
 1. **Clone o repositório**
 2. **Instale as dependências**
